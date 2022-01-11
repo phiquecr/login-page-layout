@@ -1,0 +1,263 @@
+:root {
+  --color-primary: #58af9c;
+  --color-secundary: #fff;
+
+  --bg-green: #58af9c;
+  --bg-white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+
+  text-decoration: none;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.box-align-left {
+  width: 40%;
+  height: 100%;
+  background-color: var(--bg-green);
+
+  border-radius: 0 20px 20px 0;
+  transition: .4s;
+}
+
+@media (max-width: 900px) {
+  .box-align-left {
+    display: none;
+    transition: .4s;
+  }
+}
+
+
+.box-content-sing_in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  color: var(--color-secundary);
+
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.box-content-sing_in h1 {
+  font-size: 2.8rem;
+
+  font-weight: 700;
+  font-variation-settings: "wght"700;
+}
+
+.box-content-sing_in p {
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 2.5rem;
+
+  font-weight: 200;
+  font-variation-settings: "wght"200;
+  transition: .4s;
+}
+
+@media (max-width: 1140px) {
+  .box-content-sing_in p {
+    text-align: left;
+    transition: .4s;
+  }
+}
+
+.box-content-sing_in button {
+  width: 40%;
+  height: 3rem;
+  background-color: transparent;
+
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-variation-settings: "wght"700;
+  color: var(--color-secundary);
+
+  border: solid 2px #fff;
+  border-radius: 25px;
+
+  cursor: pointer;
+}
+
+.box-content-sing_in button:hover {
+  background-color: var(--bg-white);
+  color: var(--color-primary);
+
+  transition: .4s;
+}
+
+.box-align-right {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+  background-color: var(--bg-white);
+  transition: .4s;
+}
+
+@media (max-width: 900px) {
+  .box-align-right {
+    width: 100%;
+    transition: .4s;
+  }
+}
+
+.box-content-sing_up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  color: var(--bg-green);
+  transition: .4s;
+}
+
+@media (max-width: 900px) {
+  .box-content-sing_up {
+    width: 100%;
+    padding: 0 2rem;
+    transition: .4s;
+  }
+}
+
+.header-sing_up {}
+
+.header-sing_up h1 {
+  font-size: 2.8rem;
+
+  font-weight: 700;
+  font-variation-settings: "wght"700;
+  transition: .4s;
+}
+
+@media (max-width: 900px) {
+  .box-content-sing_up h1 {
+    font-size: 2rem;
+    transition: .4s;
+  }
+}
+
+.midia-icons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+
+  padding: 1.5rem 0;
+}
+
+.midia-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  color: var(--color-primary);
+
+  border: solid 1px #58af9c;
+  border-radius: 50%;
+
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.midia-icons a:hover {
+  background-color: var(--bg-green);
+  color: var(--color-secundary);
+
+  transition: .4s;
+}
+
+.fab {
+  font-size: 1.4rem;
+}
+
+.header-sing_up p {
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 2.5rem;
+
+  font-weight: 200;
+  font-variation-settings: "wght"200;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+
+  padding: 1.5rem 0;
+}
+
+form label {
+  position: relative;
+  width: 100%;
+}
+
+form label input {
+  width: 100%;
+  height: 3rem;
+  background-color: #ecf0f1;
+
+  font-size: 1rem;
+  font-weight: 600;
+  font-variation-settings: "wght"600;
+
+  padding-left: 3rem;
+  border: 0;
+}
+
+form label input:active,
+form label input:focus {
+  border: solid 2px #58af9c;
+  color: #58af9c;
+  outline: 0;
+}
+
+.position {
+  position: absolute;
+  top: .8rem;
+  left: 1rem;
+
+  font-size: 1.2rem;
+}
+
+form button {
+  width: 40%;
+  height: 3rem;
+  background-color: transparent;
+
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-variation-settings: "wght"700;
+  color: var(--color-primary);
+
+  border: solid 2px #58af9c;
+  border-radius: 25px;
+
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: var(--bg-green);
+  color: var(--color-secundary);
+
+  transition: .4s;
+}
